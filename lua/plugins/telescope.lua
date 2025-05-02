@@ -9,6 +9,15 @@ return {
     require("telescope").setup({
       extensions = {
         ["ui-select"] = { require("telescope.themes").get_dropdown() },
+        project = {
+          base_dirs = {
+            "~/projects",
+            "~/dsa",
+          },
+          hidden_files = false,
+          order_by = "recent",
+          sync_with_nvim_tree = true,
+        },
       },
     })
     require("telescope").load_extension("ui-select")

@@ -15,6 +15,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   })
   vim.api.nvim_create_autocmd("VimEnter", {
     callback = function()
-      vim.cmd("cd ~/projects/sinister6")
+      vim.cmd("cd ~/projects/")
     end,
   })
